@@ -46,7 +46,7 @@ public class PrefractureOptionsPropertyDrawer : PropertyDrawer
             GUILayout.Space(16);
             if (GUILayout.Button("Prefracture Mesh", new GUILayoutOption[] { GUILayout.ExpandWidth(true), GUILayout.Height(32) }))
             {
-                ((Prefracture)property.serializedObject.targetObject).ComputeFracture();
+                PrefractureEditor.ComputeFracture((Prefracture)property.serializedObject.targetObject);
             }
             GUILayout.Space(16);
             EditorGUILayout.EndHorizontal();
